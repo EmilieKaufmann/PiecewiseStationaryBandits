@@ -1,6 +1,6 @@
 # Content 
 
-This package permits to try bandit algorithms for piecewise stationary bandit problems with Bernoulli rewards and to reproduce experiments in the paper
+This repository provides julia code to run bandit algorithms for piecewise stationary bandit problems with Bernoulli rewards. It notably permits to reproduce the experiments in the paper
 
 * Efficient Change-Point Detection for Tackling Piecewise-Stationary Bandits by Lilian Besson, Emilie Kaufmann, Odalric-Ambrym Maillard and Julien Seznec, arXiv:1902.01575
 
@@ -8,7 +8,7 @@ This package permits to try bandit algorithms for piecewise stationary bandit pr
 
 To run bandit algorithms on piecewise stationary instances, you should custom the parameters of your experiment in main_NonStat.jl before running this file.   
 
-All the fields that start with capital letters can be cumstomized. For example in # TYPE OF EXPERIMENT you specify whether you want to run experiment on a single instance (Frequentist) or on several randomly selected instance (Bayesian). Some benchmarks from the papers are proposed, but you can also custom your bandit instance.
+All the fields that start with capital letters can be cumstomized. For example in # TYPE OF EXPERIMENT you specify whether you want to run experiment on a single instance (Frequentist) or on several randomly selected instance (Bayesian). Some benchmarks from the paper are proposed, but you can also custom your bandit instance.
 
 The defaults parameters in main_NonStat.jl permit to run several algorithms on Problem 1 of [Besson et al. 20] up to a horizon T=20000, averaging results over N=100 independent repetitions. 
 
